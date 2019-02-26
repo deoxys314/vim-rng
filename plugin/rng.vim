@@ -2,6 +2,11 @@
 " Maintainer: Cameron Rossington <https://github.com/deoxys314>
 " Version: 1.1
 
+if exists("g:loaded_rng")
+	finish
+endif
+let g:loaded_rng = 1
+
 " George Marsaglia's Multiply-with-carry Random Number Generator {{{
 " Modified to work within Vim's semantics
 let s:m_w = 1 + getpid()
